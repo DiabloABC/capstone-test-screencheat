@@ -252,6 +252,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e745a99a05483034c90ba9d5d99731a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rb2d_player: {fileID: 0}
+  y: 0
 --- !u!212 &1080500637
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -311,8 +313,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 4.03, y: 0.26, z: -1.2498294}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1604758339}
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -327,6 +328,7 @@ GameObject:
   - component: {fileID: 1420343527}
   - component: {fileID: 1420343529}
   - component: {fileID: 1420343528}
+  - component: {fileID: 1420343530}
   m_Layer: 0
   m_Name: Camera 1
   m_TagString: Untagged
@@ -341,12 +343,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1420343526}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: 0.007, z: -1.249829}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.68, y: 0.187, z: -2.4996586}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1958749181}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!81 &1420343528
 AudioListener:
@@ -369,7 +371,7 @@ Camera:
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
-  m_FOVAxisMode: 0
+  m_FOVAxisMode: 1
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
   m_FocalLength: 50
@@ -399,6 +401,25 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &1420343530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1420343526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+<<<<<<< HEAD
+  m_Script: {fileID: 11500000, guid: b560a9d1d3e101743af5ebf49d33fa70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+=======
+  m_Script: {fileID: 11500000, guid: 672acc5f171b47747aa590cb438bf95e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1958749177}
+>>>>>>> 411653fa2176d57521be473a3f7d7cebfff7c441
 --- !u!1 &1604758338
 GameObject:
   m_ObjectHideFlags: 0
@@ -410,6 +431,7 @@ GameObject:
   - component: {fileID: 1604758339}
   - component: {fileID: 1604758341}
   - component: {fileID: 1604758340}
+  - component: {fileID: 1604758342}
   m_Layer: 0
   m_Name: Camera 2
   m_TagString: Untagged
@@ -424,12 +446,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1604758338}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.004, y: -0.009, z: -1.249829}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4.026, y: 0.251, z: -2.4996586}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1080500638}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!81 &1604758340
 AudioListener:
@@ -482,6 +504,19 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &1604758342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1604758338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 672acc5f171b47747aa590cb438bf95e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1080500634}
 --- !u!1 &1958749177
 GameObject:
   m_ObjectHideFlags: 0
@@ -535,6 +570,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e745a99a05483034c90ba9d5d99731a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rb2d_player: {fileID: 1958749178}
+  y: 0
 --- !u!212 &1958749180
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -594,8 +631,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.68, y: 0.18, z: -1.2498294}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1420343527}
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
