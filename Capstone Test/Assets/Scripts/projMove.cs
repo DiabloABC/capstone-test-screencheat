@@ -20,6 +20,6 @@ public class projMove : MonoBehaviour
     void Update()
     {
         rb2d_proj.velocity = transform.right * speed;
-        Destroy(bulletPrefab, lifetime);
+        Destroy(gameObject, lifetime);
     }
 }
