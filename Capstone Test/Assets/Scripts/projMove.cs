@@ -5,8 +5,10 @@ using UnityEngine;
 public class projMove : MonoBehaviour
 {
     private Rigidbody2D rb2d_proj;
+    public GameObject bulletPrefab;
 
     private float speed = 10.0f;
+    public float lifetime = 2.0f;
 
     // Start is called before the first frame update
     void Start()
@@ -18,5 +20,6 @@ public class projMove : MonoBehaviour
     void Update()
     {
         rb2d_proj.velocity = transform.right * speed;
+        Destroy(bulletPrefab, lifetime);
     }
 }

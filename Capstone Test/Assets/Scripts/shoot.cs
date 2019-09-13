@@ -6,6 +6,7 @@ public class shoot : MonoBehaviour
 {
     public GameObject bulletPrefab;
     public Transform player;
+    public float lifetime = 10.0f;
 
     // Start is called before the first frame update
     void Start()
@@ -19,12 +20,15 @@ public class shoot : MonoBehaviour
         if (Input.GetButtonDown("Fire1"))
         {
             Shoot();
+            
         }
+        Destroy(bulletPrefab, lifetime);
     }
 
     void Shoot()
     {
         Instantiate(bulletPrefab, player.position, player.rotation);
+        
     }
 
 }

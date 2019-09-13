@@ -231,6 +231,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b97ce9af9807494ca31fd44429bea39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 0}
+  lifetime: 2
 --- !u!50 &780606430
 Rigidbody2D:
   serializedVersion: 4
@@ -327,7 +329,7 @@ GameObject:
   - component: {fileID: 1080500637}
   - component: {fileID: 1080500635}
   - component: {fileID: 1080500636}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Player 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -496,13 +498,13 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 45
+  field of view: 146.2
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 311
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -579,13 +581,13 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 45
+  field of view: 146.2
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 567
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -610,7 +612,7 @@ GameObject:
   - component: {fileID: 1958749178}
   - component: {fileID: 1958749179}
   - component: {fileID: 1958749182}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -729,3 +731,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 780606428}
   player: {fileID: 1958749181}
+  lifetime: 10
