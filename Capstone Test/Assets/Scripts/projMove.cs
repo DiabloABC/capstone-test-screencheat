@@ -22,4 +22,9 @@ public class projMove : MonoBehaviour
         rb2d_proj.velocity = transform.right * speed;
         Destroy(gameObject, lifetime);
     }
+    void OnTriggerEnter2D(Collider2D hitInfo)
+    {
+        Debug.Log(hitInfo + "Hello");
+        Destroy(gameObject);
+    }
 }
